@@ -54,15 +54,6 @@
                     <button class="color-hero hero-btn" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="modal-btn" data-modal-close>
-                        <svg class="modal-sorite" width="11" height="11">
-                            <use href="./images/symbol-defs.svg#icon-modal"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
         </section>
         <section class="section">
             <div class="container">
@@ -352,7 +343,7 @@
                 </address>
             </div>
             <div class="footer-join">
-                <h2 class="join-title">присоединяйтесь</h2>
+                <b class="join-text">присоединяйтесь</b>
                 <ul class="list flex">
                     <li class="join-list">
                         <a href="" class="join-link">
@@ -384,8 +375,28 @@
                     </li>
                 </ul>
             </div>
+            <div class="distribution">
+                <b class="distribution-text">Подпишитесь на рассылку</b>
+                <form class="distribution-form">
+                    <input type="text" placeholder="E-mail" class="distribution-input">
+                    <button class="distribution-button">Подписаться 
+                        <svg class="distribution-icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#distribution-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-btn" data-modal-close>
+                        <svg class="modal-sorite" width="11" height="11">
+                            <use href="./images/symbol-defs.svg#icon-modal"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
