@@ -400,22 +400,37 @@
                         <label class="modal-lable">
                             Имя
                             <input type="text" name="name" class="modal-input">
-
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#modal-person"></use>
+                            </svg>
                         </label>
                         <label class="modal-lable">
                             Телефон
                             <input type="tel" name="tel" class="modal-input">
-                            
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#modal-phone"></use>
+                            </svg>
                         </label>
                         <label class="modal-lable">
                             Почта
                             <input type="email" name="mail" class="modal-input">
-                            
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#modal-email"></use>
+                            </svg>
                         </label>
                         <label class="modal-lable">
                             Комментарий
                             <textarea name="comment" placeholder="Введите текст" class="modal-textarea"></textarea>
                         </label>
+                        <label class="modal-contract">
+                            <input type="checkbox" name="checkbox" class="modal-checkbox visually-hidden">
+                            <svg class="contract-icon" width="16" height="15">
+                                <use href="./images/symbol-defs.svg#modal-check"></use>
+                            </svg>
+                            <span class="contract-text">Соглашаюсь с рассылкой и принимаю </span>
+                            <a href="#" class="contract-link">Условия договора</a>
+                        </label>
+                        <button class="contract-button">Отправить</button>
                     </form>
                 </div>
             </div>
