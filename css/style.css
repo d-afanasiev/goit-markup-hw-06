@@ -246,7 +246,6 @@ body {
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
   background-color: var(--color-hero);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -376,29 +375,39 @@ body {
   color: var(--color-link);
 }
 
+.modal-checkbox {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+
 .contract-icon {
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0;
+  left: 0;
   opacity: 0;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contract-check {
-  position: relative;
-  width: 16px;
-  height: 15px;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
   border-radius: 2px;
   border: 2px solid var(--color-main);
-  margin-right: 8px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox:checked + .contract-check {
-  border: 2px solid var(--color-link);
+.input-checkbox:checked + .modal-checkbox .contract-check {
+  opacity: 0;
 }
 
-.modal-checkbox:checked + .contract-check .contract-icon {
+.input-checkbox:checked + .modal-checkbox .contract-icon {
   opacity: 1;
   background-color: var(--color-link);
 }
